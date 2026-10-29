@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "markdown-link-checker-cli"
+version = "1.0.0"
+description = "An offline checker for local Markdown links"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+
+[project.scripts]
+markdown-link-checker = "markdown_link_checker.cli:main"
+
+[tool.setuptools]
+packages = ["markdown_link_checker"]
